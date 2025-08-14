@@ -392,3 +392,97 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 });
+
+// ==== Modal de Imagem ====
+document.addEventListener('DOMContentLoaded', function() {
+  const modal = document.getElementById('imageModal');
+  const modalImage = document.getElementById('modalImage');
+  const modalClose = document.getElementById('modalClose');
+  const modalOverlay = document.getElementById('modalOverlay');
+  const modalPrev = document.getElementById('modalPrev');
+  const modalNext = document.getElementById('modalNext');
+  
+  let currentImageIndex = 0;
+  let images = [];
+  
+  // Função para abrir o modal
+  function openModal(imageSrc, imageIndex) {
+    modalImage.src = imageSrc;
+    currentImageIndex = imageIndex;
+    modal.classList.add('active');
+    document.body.style.overflow = 'hidden';
+    
+    // Atualizar visibilidade das setas
+    updateNavButtons();
+  }
+  
+  // Função para fechar o modal
+  function closeModal() {
+    modal.classList.remove('active');
+    document.body.style.overflow = '';
+  }
+  
+  // Função para navegar entre imagens
+  function navigateImage(direction) {
+    if (direction === 'prev' && currentImageIndex > 0) {
+      currentImageIndex--;
+    } else if (direction === 'next' && currentImageIndex < images.length - 1) {
+      currentImageIndex++;
+    }
+    
+    modalImage.src = images[currentImageIndex];
+    updateNavButtons();
+  }
+  
+  // Função para atualizar visibilidade dos botões de navegação
+  function updateNavButtons() {
+    modalPrev.style.display = currentImageIndex > 0 ? 'flex' : 'none';
+    modalNext.style.display = currentImageIndex < images.length - 1 ? 'flex' : 'none';
+  }
+  
+  // Event listeners
+  modalClose.addEventListener('click', closeModal);
+  modalOverlay.addEventListener('click', function(e) {
+    if (e.target === modalOverlay) {
+      closeModal();
+    }
+  });
+  
+  modalPrev.addEventListener('click', () => navigateImage('prev'));
+  modalNext.addEventListener('click', () => navigateImage('next'));
+  
+  // Fechar com ESC
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape' && modal.classList.contains('active')) {
+      closeModal();
+    } else if (e.key === 'ArrowLeft' && modal.classList.contains('active')) {
+      navigateImage('prev');
+    } else if (e.key === 'ArrowRight' && modal.classList.contains('active')) {
+      navigateImage('next');
+    }
+  });
+  
+  // Adicionar click nas imagens da galeria
+  const galeriaImages = document.querySelectorAll('.galeria-item img');
+  galeriaImages.forEach((img, index) => {
+    images.push(img.src);
+    img.style.cursor = 'pointer';
+    img.addEventListener('click', () => openModal(img.src, index));
+  });
+  
+  // Adicionar click na imagem da seção sobre
+  const aboutImage = document.querySelector('.about__img img');
+  if (aboutImage) {
+    aboutImage.style.cursor = 'pointer';
+    aboutImage.addEventListener('click', () => openModal(aboutImage.src, 0));
+  }
+  
+  // Adicionar click nas imagens da equipe
+  const equipeImages = document.querySelectorAll('.equipe-foto img');
+  equipeImages.forEach((img, index) => {
+    const globalIndex = images.length;
+    images.push(img.src);
+    img.style.cursor = 'pointer';
+    img.addEventListener('click', () => openModal(img.src, globalIndex));
+  });
+});
