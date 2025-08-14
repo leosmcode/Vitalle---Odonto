@@ -2452,7 +2452,7 @@ img:hover {
 }
 
 .modal-close {
-  position: absolute;
+  position: fixed;
   top: 20px;
   right: 20px;
   background: rgba(0, 0, 0, 0.8);
@@ -2478,7 +2478,7 @@ img:hover {
 }
 
 .modal-nav {
-  position: absolute;
+  position: fixed;
   top: 50%;
   transform: translateY(-50%);
   background: rgba(0, 0, 0, 0.8);
@@ -2524,6 +2524,7 @@ img:hover {
   }
   
   .modal-close {
+    position: fixed;
     top: 10px;
     right: 10px;
     width: 45px;
@@ -2534,6 +2535,7 @@ img:hover {
   }
   
   .modal-nav {
+    position: fixed;
     display: flex;
     width: 40px;
     height: 40px;
