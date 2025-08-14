@@ -1,0 +1,534 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Vittale Odontologia | Itajaí</title>
+  <meta name="description"
+    content="Vittale Odontologia Especializada em Itajaí. Estética, implantes, ortodontia invisível e urgência 24h." />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🦷</text></svg>">
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="header" id="topo">
+    <div class="container nav">
+      <div class="header-logo">
+        <a href="#topo" class="logo-link">
+          <img src="img-logos/LOGOTIPOS SEM FUNDO.PNG" alt="Vittale Odontologia" class="mobile-logo">
+        </a>
+      </div>
+      <nav class="nav-links" aria-label="principal">
+        <a href="#sobre">Sobre</a>
+        <a href="#servicos">Especialidades</a>
+        <a href="#dra-luana">Equipe</a>
+        <a href="#galeria">Galeria</a>
+        <a href="#contato">Contato</a>
+      </nav>
+
+      <button class="hamburger" id="hamburgerBtn" aria-label="Abrir menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Menu Mobile -->
+  <nav class="mobile-nav" id="mobileNav">
+    <a href="#sobre">Sobre</a>
+    <a href="#servicos">Especialidades</a>
+    <a href="#dra-luana">Equipe</a>
+    <a href="#galeria">Galeria</a>
+    <a href="#contato">Contato</a>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero" id="hero" aria-label="Destaque">
+    <div class="hero__bg" role="img" aria-label="Paciente sorrindo em consultório"></div>
+    <div class="container hero__content" data-animate="fade-up">
+      <h1>Confie o seu sorriso aos nossos cuidados.</h1>
+      <p>Mais do que sorrisos, criamos
+        experiências que
+        transformam. </p>
+      <div class="hero__actions">
+        <a href="https://wa.me/5547988798778?text=Olá! Gostaria de agendar uma avaliação." class="btn" target="_blank"
+          rel="noopener">Agendar avaliação</a>
+      </div>
+    </div>
+    </div>
+    <a class="scroll-indicator" href="#servicos" aria-label="Role para baixo">▿</a>
+  </section>
+
+  <!-- Sobre -->
+  <section class="section" id="sobre" aria-labelledby="tit-sobre">
+    <div class="container about">
+      <div class="about__img" data-parallax>
+        <img src="imgsobre.JPEG" alt="Ambiente Vittale" loading="lazy" />
+      </div>
+      <div class="about__text" data-animate="fade-left">
+        <h2 id="tit-sobre">Vittale Odontologia Especializada</h2>
+        <h3>Seu sorriso em boas mãos!</h3>
+        <p>Na Vittale, acreditamos que cada sorriso carrega uma história – e que o cuidado vai
+          muito além dos dentes.<br>Nosso compromisso é oferecer uma
+          experiência que acolhe, escuta e transforma.<br>
+          Combinamos técnica, sensibilidade e tempo
+          dedicado para cuidar não só da saúde bucal,
+          mas da autoestima, da confiança e do bem-
+          estar de cada paciente.</p>
+        <a href="#contato" class="btn">Fale conosco</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Serviços -->
+  <section class="section" id="servicos" aria-labelledby="tit-servicos">
+    <div class="container">
+      <header class="section__header">
+        <h2 id="tit-servicos">Especialidades atendidas</h2>
+      </header>
+
+      <div class="especialidades-grid">
+        <!-- Primeira linha: 4 cards -->
+        <div class="especialidades-row">
+          <article class="card" data-especialidade="clinica-geral">
+            <div class="card__front">
+              <img loading="lazy" src="img-especialidades/clinicageral.JPEG" alt="Clínica Geral" />
+              <div class="card__body">
+                <h3>Clínica Geral</h3>
+              </div>
+            </div>
+            <div class="card__back">
+              <div class="card__content">
+                <h3>Clínica Geral</h3>
+                <p>Especialidade que oferece tratamentos preventivos, restauradores e de manutenção da saúde bucal,
+                  incluindo limpeza, restaurações e exames de rotina.</p>
+                <a href="https://wa.me/5547988798778?text=Olá! Gostaria de agendar uma consulta para Clínica Geral."
+                  class="btn btn--card" target="_blank" rel="noopener">
+                  Agendar
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card" data-especialidade="ortodontia">
+            <div class="card__front">
+              <img loading="lazy" src="img-especialidades/ortodontia.JPEG" alt="Ortodontia" />
+              <div class="card__body">
+                <h3>Ortodontia</h3>
+              </div>
+            </div>
+            <div class="card__back">
+              <div class="card__content">
+                <h3>Ortodontia</h3>
+                <p>Especialidade da odontologia que atua desde a infância no diagnóstico, prevenção e correção das más
+                  posições dos dentes e ossos maxilares.</p>
+                <a href="https://wa.me/5547988798778?text=Olá! Gostaria de agendar uma consulta para Ortodontia."
+                  class="btn btn--card" target="_blank" rel="noopener">
+                  Agendar
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card" data-especialidade="endodontia">
+            <div class="card__front">
+              <img loading="lazy" src="img-especialidades/endodontia.JPEG" alt="Endodontia" />
+              <div class="card__body">
+                <h3>Endodontia</h3>
+                <p>Tratamento de Canal</p>
+              </div>
+            </div>
+            <div class="card__back">
+              <div class="card__content">
+                <h3>Endodontia</h3>
+                <p>Especialidade que trata da polpa dentária e dos tecidos que circundam as raízes dos dentes.</p>
+                <a href="https://wa.me/5547988798778?text=Olá! Gostaria de agendar uma consulta para Endodontia."
+                  class="btn btn--card" target="_blank" rel="noopener">
+                  Agendar
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card" data-especialidade="odontopediatria">
+            <div class="card__front">
+              <img loading="lazy" src="img-especialidades/odontopediatria.JPEG" alt="Odontopediatria" />
+              <div class="card__body">
+                <h3>Odontopediatria</h3>
+              </div>
+            </div>
+            <div class="card__back">
+              <div class="card__content">
+                <h3>Odontopediatria</h3>
+                <p>Especialidade dedicada ao atendimento odontológico de crianças e adolescentes, com foco na prevenção
+                  e educação para saúde bucal.</p>
+                <a href="https://wa.me/5547988798778?text=Olá! Gostaria de agendar uma consulta para Odontopediatria."
+                  class="btn btn--card" target="_blank" rel="noopener">
+                  Agendar
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- Segunda linha: 4 cards -->
+        <div class="especialidades-row">
+          <article class="card" data-especialidade="implantodontia">
+            <div class="card__front">
+              <img loading="lazy" src="img-especialidades/implantodontia.JPEG" alt="Implantodontia" />
+              <div class="card__body">
+                <h3>Implantodontia</h3>
+              </div>
+            </div>
+            <div class="card__back">
+              <div class="card__content">
+                <h3>Implantodontia</h3>
+                <p>Especialidade que realiza implantes dentários para substituir dentes perdidos, restaurando a função
+                  mastigatória e a estética do sorriso.</p>
+                <a href="https://wa.me/5547988798778?text=Olá! Gostaria de agendar uma consulta para Implantodontia."
+                  class="btn btn--card" target="_blank" rel="noopener">
+                  Agendar
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card" data-especialidade="estetica-dental">
+            <div class="card__front">
+              <img loading="lazy" src="img-especialidades/esteticadental.JPEG" alt="Estética Dental" />
+              <div class="card__body">
+                <h3>Estética Dental</h3>
+              </div>
+            </div>
+            <div class="card__back">
+              <div class="card__content">
+                <h3>Estética Dental</h3>
+                <p>Especialidade focada em melhorar a aparência dos dentes através de procedimentos como clareamento,
+                  facetas e harmonização do sorriso.</p>
+                <a href="https://wa.me/5547988798778?text=Olá! Gostaria de agendar uma consulta para Estética Dental."
+                  class="btn btn--card" target="_blank" rel="noopener">
+                  Agendar
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card" data-especialidade="harmonizacao-facial">
+            <div class="card__front">
+              <img loading="lazy" src="img-especialidades/harmonizacaofacial.JPEG" alt="Harmonização Facial" />
+              <div class="card__body">
+                <h3>Harmonização Facial</h3>
+              </div>
+            </div>
+            <div class="card__back">
+              <div class="card__content">
+                <h3>Harmonização Facial</h3>
+                <p>Especialidade que utiliza procedimentos estéticos para harmonizar as proporções faciais, melhorando a
+                  aparência e autoestima do paciente.</p>
+                <a href="https://wa.me/5547988798778?text=Olá! Gostaria de agendar uma consulta para Harmonização Facial."
+                  class="btn btn--card" target="_blank" rel="noopener">
+                  Agendar
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card" data-especialidade="protese">
+            <div class="card__front">
+              <img loading="lazy" src="img-especialidades/protese.JPEG" alt="Prótese" />
+              <div class="card__body">
+                <h3>Prótese</h3>
+              </div>
+            </div>
+            <div class="card__back">
+              <div class="card__content">
+                <h3>Prótese</h3>
+                <p>Especialidade que confecciona próteses dentárias para substituir dentes perdidos, restaurando a
+                  função mastigatória e a estética.</p>
+                <a href="https://wa.me/5547988798778?text=Olá! Gostaria de agendar uma consulta para Prótese."
+                  class="btn btn--card" target="_blank" rel="noopener">
+                  Agendar
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Dra. Luana -->
+  <section class="section section--soft" id="dra-luana" aria-labelledby="tit-dra-luana">
+    <div class="container">
+      <header class="section__header" data-animate="fade-up">
+        <h2 id="tit-especialistas">Nossos Especialistas</h2>
+      </header>
+
+      <div class="equipe-bloco" data-animate="fade-up">
+        <div class="equipe-foto">
+          <img src="LUANA.JPEG" alt="Dra. Luana - Dentista" loading="lazy">
+        </div>
+        <div class="equipe-texto">
+          <h3>Dra. Luana Pollo</h3>
+          <h4>Cirurgiã-dentista especialista em Ortodontia.</h4>
+          <p>Atuo com foco no alinhamento dos dentes e na harmonia da face, utilizando aparelhos fixos, alinhadores
+            invisíveis e ortopedia funcional dos maxilares.
+            Cada plano de tratamento é pensado de forma individualizada, respeitando as necessidades de cada paciente —
+            sempre com atenção à saúde bucal, à funcionalidade e à estética.
+            Mais do que movimentar dentes, meu compromisso é promover equilíbrio, bem-estar e confiança através do
+            sorriso em todas as fases da vida.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Dr. Welinton -->
+  <section class="section section--welinton" id="dr-welinton" aria-labelledby="tit-dr-welinton">
+    <div class="container">
+      <div class="equipe-bloco invertido" data-animate="fade-up">
+        <div class="equipe-foto">
+          <img src="WELINTON.JPEG" alt="Dr. Welinton - Dentista" loading="lazy">
+        </div>
+        <div class="equipe-texto">
+          <h3>Dr. Weliton Hommerdirg</h3>
+          <h4>Cirurgião-dentista e especialista em Endodontia.</h4>
+
+          <p>Minha missão é cuidar de você nos momentos mais delicados — quando a dor aparece e você precisa de alívio
+            rápido, tratamento seguro e acolhimento de verdade.
+            Como endodontista, sou especializado em tratar a parte interna
+            dos dentes, preservando estruturas naturais sempre que
+            possível e devolvendo saúde, conforto e tranquilidade ao seu
+            sorriso. Aqui, cada paciente é tratado com respeito, empatia e atenção
+            aos detalhes — porque eu sei o quanto é importante se sentir
+            bem e confiante durante todo o processo.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Galeria -->
+  <section class="section" id="galeria" aria-labelledby="tit-galeria">
+    <div class="container">
+      <header class="section__header" data-animate="fade-up">
+        <h2 id="tit-galeria">Galeria</h2>
+        <p>Ambientes, tecnologia e resultados.</p>
+      </header>
+
+      <div class="galeria-grid" data-animate="fade-up">
+        <figure class="galeria-item">
+          <img src="img-galeria/S2EC4326.jpeg" alt="Galeria Vittale Odontologia" loading="lazy">
+        </figure>
+        <figure class="galeria-item">
+          <img src="img-galeria/S2EC4323.jpeg" alt="Galeria Vittale Odontologia" loading="lazy">
+        </figure>
+        <figure class="galeria-item">
+          <img src="img-galeria/S2EC4322.jpeg" alt="Galeria Vittale Odontologia" loading="lazy">
+        </figure>
+        <figure class="galeria-item">
+          <img src="img-galeria/S2EC4320.jpeg" alt="Galeria Vittale Odontologia" loading="lazy">
+        </figure>
+        <!-- Fotos adicionais (inicialmente ocultas no mobile) -->
+        <figure class="galeria-item galeria-item--hidden">
+          <img src="img-galeria/S2EC4318.jpeg" alt="Galeria Vittale Odontologia" loading="lazy">
+        </figure>
+        <figure class="galeria-item galeria-item--hidden">
+          <img src="img-galeria/S2EC4317.jpeg" alt="Galeria Vittale Odontologia" loading="lazy">
+        </figure>
+        <figure class="galeria-item galeria-item--hidden">
+          <img src="img-galeria/S2EC4314.jpeg" alt="Galeria Vittale Odontologia" loading="lazy">
+        </figure>
+        <figure class="galeria-item galeria-item--hidden">
+          <img src="img-galeria/S2EC4313.jpeg" alt="Galeria Vittale Odontologia" loading="lazy">
+        </figure>
+        <figure class="galeria-item galeria-item--hidden">
+          <img src="img-galeria/S2EC4311.jpeg" alt="Galeria Vittale Odontologia" loading="lazy">
+        </figure>
+        <figure class="galeria-item galeria-item--hidden">
+          <img src="img-galeria/S2EC4308.jpeg" alt="Galeria Vittale Odontologia" loading="lazy">
+        </figure>
+        <figure class="galeria-item galeria-item--hidden">
+          <img src="img-galeria/S2EC4305.jpeg" alt="Galeria Vittale Odontologia" loading="lazy">
+        </figure>
+        <figure class="galeria-item galeria-item--hidden">
+          <img src="img-galeria/S2EC4302.jpeg" alt="Galeria Vittale Odontologia" loading="lazy">
+        </figure>
+        <figure class="galeria-item galeria-item--hidden">
+          <img src="img-galeria/S2EC4301.jpeg" alt="Galeria Vittale Odontologia" loading="lazy">
+        </figure>
+        <figure class="galeria-item galeria-item--hidden">
+          <img src="img-galeria/S2EC4389.jpeg" alt="Galeria Vittale Odontologia" loading="lazy">
+        </figure>
+        <figure class="galeria-item galeria-item--hidden">
+          <img src="img-galeria/S2EC4388.jpeg" alt="Galeria Vittale Odontologia" loading="lazy">
+        </figure>
+        <figure class="galeria-item galeria-item--hidden">
+          <img src="img-galeria/S2EC4385.jpeg" alt="Galeria Vittale Odontologia" loading="lazy">
+        </figure>
+        <figure class="galeria-item galeria-item--hidden">
+          <img src="img-galeria/S2EC4382.jpeg" alt="Galeria Vittale Odontologia" loading="lazy">
+        </figure>
+        <figure class="galeria-item galeria-item--hidden">
+          <img src="img-galeria/S2EC4359.jpeg" alt="Galeria Vittale Odontologia" loading="lazy">
+        </figure>
+        <figure class="galeria-item galeria-item--hidden">
+          <img src="img-galeria/S2EC4358.jpeg" alt="Galeria Vittale Odontologia" loading="lazy">
+        </figure>
+        <figure class="galeria-item galeria-item--hidden">
+          <img src="img-galeria/S2EC4353.jpeg" alt="Galeria Vittale Odontologia" loading="lazy">
+        </figure>
+        <figure class="galeria-item galeria-item--hidden">
+          <img src="img-galeria/S2EC4350.jpeg" alt="Galeria Vittale Odontologia" loading="lazy">
+        </figure>
+        <figure class="galeria-item galeria-item--hidden">
+          <img src="img-galeria/S2EC4347.jpeg" alt="Galeria Vittale Odontologia" loading="lazy">
+        </figure>
+        <figure class="galeria-item galeria-item--hidden">
+          <img src="img-galeria/S2EC4340.jpeg" alt="Galeria Vittale Odontologia" loading="lazy">
+        </figure>
+        <figure class="galeria-item galeria-item--hidden">
+          <img src="img-galeria/S2EC4339.jpeg" alt="Galeria Vittale Odontologia" loading="lazy">
+        </figure>
+        <figure class="galeria-item galeria-item--hidden">
+          <img src="img-galeria/S2EC4338.jpeg" alt="Galeria Vittale Odontologia" loading="lazy">
+        </figure>
+        <figure class="galeria-item galeria-item--hidden">
+          <img src="img-galeria/S2EC4336.jpeg" alt="Galeria Vittale Odontologia" loading="lazy">
+        </figure>
+        <figure class="galeria-item galeria-item--hidden">
+          <img src="img-galeria/S2EC4334.jpeg" alt="Galeria Vittale Odontologia" loading="lazy">
+        </figure>
+        <figure class="galeria-item galeria-item--hidden">
+          <img src="img-galeria/S2EC4333.jpeg" alt="Galeria Vittale Odontologia" loading="lazy">
+        </figure>
+        <figure class="galeria-item galeria-item--hidden">
+          <img src="img-galeria/S2EC4330.jpeg" alt="Galeria Vittale Odontologia" loading="lazy">
+        </figure>
+        <figure class="galeria-item galeria-item--hidden">
+          <img src="img-galeria/S2EC4329.jpeg" alt="Galeria Vittale Odontologia" loading="lazy">
+        </figure>
+      </div>
+
+      <div class="galeria-actions" data-animate="fade-up">
+        <button class="btn btn--outline" id="btnExibirMais">
+          Exibir mais fotos
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Informações de Contato -->
+  <section class="section section--contact" id="contato" aria-labelledby="tit-contato">
+    <div class="container">
+      <header class="section__header" data-animate="fade-up">
+        <h2 id="tit-contato">Entre em Contato</h2>
+        <p>Estamos aqui para cuidar do seu sorriso</p>
+      </header>
+
+      <div class="contact-info" data-animate="fade-up">
+        <div class="contact-details">
+          <div class="contact-card">
+            <div class="contact-icon-wrapper">
+              <svg class="contact-icon" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
+              </svg>
+            </div>
+            <div class="contact-content">
+              <h3>Endereço</h3>
+              <p>R. Manoel Viêira Garção, 10 — Centro<br>Itajaí - SC<br>Edifício Phd Office — Sala 702</p>
+            </div>
+          </div>
+
+          <div class="contact-card">
+            <div class="contact-icon-wrapper">
+              <svg class="contact-icon" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" />
+              </svg>
+            </div>
+            <div class="contact-content">
+              <h3>Telefone</h3>
+              <p><a href="tel:+5547988798778">(47) 9 8879-8778</a></p>
+            </div>
+          </div>
+
+          <div class="contact-card">
+            <div class="contact-icon-wrapper">
+              <svg class="contact-icon" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z" />
+                <path d="M12.5 7H11v6l5.25 3.15.75-1.23-4.5-2.67z" />
+              </svg>
+            </div>
+            <div class="contact-content">
+              <h3>Horário de Funcionamento</h3>
+              <p>Segunda a sábado<br>Das 09h ás 18:30h<strong><br>Atendimento de Urgência 24h -<br>mediante de ligação e
+                  agendamento.</p>
+            </div>
+          </div>
+
+          <div class="contact-actions">
+            <a href="https://wa.me/5547988798778?text=Olá! Gostaria de agendar uma consulta." class="btn btn--contact"
+              target="_blank" rel="noopener">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488" />
+              </svg>
+              Agendar pelo WhatsApp
+            </a>
+          </div>
+        </div>
+
+        <div class="contact-map">
+          <div class="map-container">
+            <iframe title="Localização Vittale Odontologia" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+              src="https://maps.google.com/maps?q=R.%20Manoel%20Vi%C3%AAira%20Gar%C3%A7%C3%A3o%2010%2C%20Itaja%C3%AD&t=&z=15&ie=UTF8&iwloc=&output=embed">
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <img src="img-logos/logotipo atualizado png-07.PNG" alt="Vittale Odontologia" class="footer__logo">
+      </div>
+      <div class="footer__social">
+        <a href="https://www.instagram.com/vittaleitajai/" target="_blank" rel="noopener" aria-label="Instagram">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+          </svg>
+        </a>
+      </div>
+    </div>
+    <div class="container footer__bottom">
+      <small>© <span id="year"></span> Vittale Odontologia. Todos os direitos reservados.</small>
+      <p><span id="year"></span>Desenvolvido por <a href="https://www.instagram.com/volcode/" target="_blank"
+          rel="noopener" class="volcode-link">Volcode</a></p>
+    </div>
+  </footer>
+
+  <!-- Botão flutuante WhatsApp -->
+  <a href="https://wa.me/5547988798778?text=Olá! Gostaria de mais informações sobre os serviços." class="whatsapp-float"
+    target="_blank" rel="noopener" aria-label="WhatsApp">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+      <path
+        d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488" />
+    </svg>
+  </a>
+
+  <script src="script.js" defer></script>
+</body>
+
+</html>
