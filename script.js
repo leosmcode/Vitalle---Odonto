@@ -469,20 +469,4 @@ document.addEventListener('DOMContentLoaded', function() {
     img.style.cursor = 'pointer';
     img.addEventListener('click', () => openModal(img.src, index));
   });
-  
-  // Adicionar click na imagem da seção sobre
-  const aboutImage = document.querySelector('.about__img img');
-  if (aboutImage) {
-    aboutImage.style.cursor = 'pointer';
-    aboutImage.addEventListener('click', () => openModal(aboutImage.src, 0));
-  }
-  
-  // Adicionar click nas imagens da equipe
-  const equipeImages = document.querySelectorAll('.equipe-foto img');
-  equipeImages.forEach((img, index) => {
-    const globalIndex = images.length;
-    images.push(img.src);
-    img.style.cursor = 'pointer';
-    img.addEventListener('click', () => openModal(img.src, globalIndex));
-  });
 });
